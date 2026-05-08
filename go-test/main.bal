@@ -2,11 +2,11 @@ import ballerina/http;
 import ballerina/log;
 import ballerina/os;
 
-string IDM_HR_Integration_URL = os:getEnv("CHOREO_MY_GO_SERVICE_API_CONNECT_SERVICEURL");
-string IDM_HR_Integration_clientID = os:getEnv("CHOREO_MY_GO_SERVICE_API_CONNECT_CONSUMERKEY");
-string IDM_HR_Integration_clientSecret = os:getEnv("CHOREO_MY_GO_SERVICE_API_CONNECT_CONSUMERSECRET");
-string IDM_HR_Integration_tokenUrl = os:getEnv("CHOREO_MY_GO_SERVICE_API_CONNECT_TOKENURL");
-string IDM_HR_Integration_theAPIKey = os:getEnv("CHOREO_MY_GO_SERVICE_API_CONNECT_CHOREOAPIKEY");
+string IDM_HR_Integration_URL = os:getEnv("CHOREO_MY_CON_SERVICEURL");
+string IDM_HR_Integration_clientID = os:getEnv("CHOREO_MY_CON_CONSUMERKEY");
+string IDM_HR_Integration_clientSecret = os:getEnv("CHOREO_MY_CON_CONSUMERSECRET");
+string IDM_HR_Integration_tokenUrl = os:getEnv("CHOREO_MY_CON_TOKENURL");
+string IDM_HR_Integration_theAPIKey = os:getEnv("CHOREO_MY_CON_CHOREOAPIKEY");
 
 public function main() returns error? {
     http:Client httpclient = check new(

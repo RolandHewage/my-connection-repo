@@ -1,1 +1,5 @@
 schemaVersion: 1.2
+dependencies:
+    connectionReferences:
+    - name: My Con
+      resourceRef: service:/connect-test2/my-go-api/v1/803f0/PUBLIC
